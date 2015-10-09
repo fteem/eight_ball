@@ -1,0 +1,2 @@
+defmodule EightBall do
+end
