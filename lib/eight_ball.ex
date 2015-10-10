@@ -1,4 +1,5 @@
 defmodule EightBall do
+  # Found at https://en.wikipedia.org/wiki/Magic_8-Ball#Possible_answers
   @answers [
     "It is certain",
     "It is decidedly so",
@@ -21,4 +22,8 @@ defmodule EightBall do
     "Outlook not so good",
     "Very doubtful"
   ]
+
+  def ask(question) do
+    @answers |> Enum.shuffle |> List.first
+  end
 end
