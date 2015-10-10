@@ -24,6 +24,7 @@ defmodule EightBall do
   ]
 
   def ask(question) do
+    EightBall.QuestionValidator.validate!(question)
     @answers |> Enum.shuffle |> List.first
   end
 end
