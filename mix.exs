@@ -36,6 +36,7 @@ defmodule EightBall.Mixfile do
       files: ["lib", "mix.exs", "README", "LICENSE*"],
       maintainers: ["Ilija Eftimov"],
       licenses: ["Apache 2.0"],
+      description: "Library that acts like a real life Magic 8 Ball.",
       links: %{"GitHub" => "https://github.com/fteem/eight_ball"}
     ]
   end
