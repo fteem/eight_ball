@@ -11,6 +11,6 @@ defmodule EightBall.QuestionValidator do
   end
 
   defp throw_validation_error do
-    throw "Question must be a string, ending with a question mark."
+    raise RuntimeError, message: "Question must be a string, ending with a question mark."
   end
 end
