@@ -24,6 +24,9 @@ defmodule EightBall do
   ]
 
   def ask(question) do
+    # Set seed dynamically to get proper randomness
+    :random.seed(:os.timestamp)
+
     EightBall.QuestionValidator.validate!(question)
     @answers |> Enum.shuffle |> List.first
   end
